@@ -1,0 +1,101 @@
+/* High Contrast Mode */
+.high-contrast {
+  background-color: #000;
+  color: #fff;
+}
+
+.high-contrast a {
+  color: #ffff00;
+}
+
+.high-contrast button {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #fff;
+}
+
+/* Reduce Motion */
+.reduce-motion * {
+  transition: none !important;
+  animation: none !important;
+}
+
+/* Dyslexia-friendly Font */
+.dyslexia-font {
+  font-family: "OpenDyslexic", sans-serif;
+}
+
+/* Screen Reader Mode */
+.screen-reader-mode:focus {
+  outline: 2px solid #4a90e2;
+  outline-offset: 2px;
+}
+
+/* Keyboard Navigation */
+.keyboard-navigation :focus {
+  outline: 3px solid #4a90e2;
+  outline-offset: 2px;
+}
+
+/* Color Blind Modes */
+[data-color-blind-mode="protanopia"] {
+  filter: url("#protanopia-filter");
+}
+
+[data-color-blind-mode="deuteranopia"] {
+  filter: url("#deuteranopia-filter");
+}
+
+[data-color-blind-mode="tritanopia"] {
+  filter: url("#tritanopia-filter");
+}
+
+/* SVG filters for color blind modes */
+<
+svg style="display: none;">
+  <filter id="protanopia-filter">
+    <feColorMatrix
+      in="SourceGraphic"
+      type="matrix"
+      values="0.567, 0.433, 0,     0, 0
+              0.558, 0.442, 0,     0, 0
+              0,     0.242, 0.758, 0, 0
+              0,     0,     0,     1, 0"/>
+  </filter>
+  <filter id="deuteranopia-filter">
+    <feColorMatrix
+      in="SourceGraphic"
+      type="matrix"
+      values="0.625, 0.375, 0,   0, 0
+              0.7,   0.3,   0,   0, 0
+              0,     0.3,   0.7, 0, 0
+              0,     0,     0,   1, 0"/>
+  </filter>
+  <filter id="tritanopia-filter">
+    <feColorMatrix
+      in="SourceGraphic"
+      type="matrix"
+      values="0.95, 0.05,  0,     0, 0
+              0,    0.433, 0.567, 0, 0
+              0,    0.475, 0.525, 0, 0
+              0,    0,     0,     1, 0"/>
+  </filter>
+</svg>
+
+/* Skip to main content link */
+.skip-to-main-content-link {
+  position: absolute;
+  left: -9999px;
+  z-index: 999;
+  padding: 1em;
+  background-color: #000;
+  color: #fff;
+  opacity: 0;
+}
+
+.skip-to-main-content-link:focus {
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 1;
+}
+
