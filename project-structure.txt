@@ -1,0 +1,33 @@
+wp-hospitalar/
+├── admin/
+│   ├── class-wp-hospitalar-admin.php
+│   ├── js/
+│   │   └── wp-hospitalar-admin.js
+│   └── css/
+│       └── wp-hospitalar-admin.css
+├── includes/
+│   ├── class-wp-hospitalar.php
+│   ├── class-wp-hospitalar-patient.php
+│   ├── class-wp-hospitalar-doctor.php
+│   ├── class-wp-hospitalar-appointment.php
+│   └── class-wp-hospitalar-db.php
+├── public/
+│   ├── class-wp-hospitalar-public.php
+│   ├── js/
+│   │   └── wp-hospitalar-public.js
+│   └── css/
+│       └── wp-hospitalar-public.css
+├── templates/
+│   ├── patient-dashboard.php
+│   ├── doctor-dashboard.php
+│   └── appointment-form.php
+├── languages/
+│   ├── wp-hospitalar.pot
+│   ├── wp-hospitalar-pt_BR.po
+│   └── wp-hospitalar-pt_BR.mo
+├── assets/
+│   └── images/
+├── wp-hospitalar.php
+├── uninstall.php
+└── README.txt
+
